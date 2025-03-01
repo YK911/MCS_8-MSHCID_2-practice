@@ -63,6 +63,11 @@ img {
 
 /* Header */
 .header {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  left: 0;
+  z-index: 10;
 }
 
 
@@ -145,3 +150,58 @@ img {
 .nav-menu-link{
     letter-spacing: -0.02em;
 }
+
+/* Hero Section */
+.hero {
+  padding: 300px 0 32px 0;
+  background-image: repeating-linear-gradient(90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(59, 59, 59, 0.2) 16.67%,
+        rgba(255, 255, 255, 0) 100%),
+      linear-gradient(270deg, #1c1d20 49.69%, #69292d 67.71%, #ed3b44 99.91%);
+  background-size: 70px, 100%;
+
+  background-blend-mode: overlay;
+  backdrop-filter: blur(50px);
+}
+
+.hero-title {
+  max-width: 1084px;
+  margin: 0 auto 243px;
+  /* margin: 0 auto;
+  margin-bottom: 243px; */
+  font-size: 90px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  border: 1px solid #FAFAFA33;
+  border-radius: 60px;
+}
+
+
+.socials-item:not(:last-child) > .socials-link {
+  text-transform: uppercase;
+  width: 55px;
+  height: 55px;
+}
+
+.socials-item:last-child>.socials-link {
+  padding: 18px 24px;
+}
+
